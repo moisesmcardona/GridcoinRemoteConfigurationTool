@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("GridcoinRemoteConfigurator")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("Gridcoin Remote Configuration Tool")>
+<Assembly: AssemblyDescription("This is a tool that will modify your Gridcoin Research Configuration File in order to enable Remote RPC access")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("GridcoinRemoteConfigurator")>
-<Assembly: AssemblyCopyright("Copyright ©  2016")>
+<Assembly: AssemblyProduct("Gridcoin Remote Configuration Tool")>
+<Assembly: AssemblyCopyright("Copyright Moises Cardona ©  2016")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

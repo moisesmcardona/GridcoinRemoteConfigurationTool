@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8989961B-2E41-474D-B1DF-E6DE32AE5BF6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>GridcoinRemoteConfigurator.My.MyApplication</StartupObject>
-    <RootNamespace>GridcoinRemoteConfigurator</RootNamespace>
-    <AssemblyName>GridcoinRemoteConfigurator</AssemblyName>
+    <StartupObject>GridcoinRemoteConfigurationTool.My.MyApplication</StartupObject>
+    <RootNamespace>GridcoinRemoteConfigurationTool</RootNamespace>
+    <AssemblyName>GridcoinRemoteConfigurationTool</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>GridcoinRemoteConfigurator.xml</DocumentationFile>
+    <DocumentationFile>GridcoinRemoteConfigurationTool.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>GridcoinRemoteConfigurator.xml</DocumentationFile>
+    <DocumentationFile>GridcoinRemoteConfigurationTool.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -45,6 +45,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gridcoin.png.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -117,6 +120,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gridcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gridcoin.png.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
