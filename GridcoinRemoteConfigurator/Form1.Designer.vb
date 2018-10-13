@@ -28,7 +28,6 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -40,12 +39,13 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.PortText = New System.Windows.Forms.TextBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(523, 39)
@@ -54,12 +54,12 @@ Partial Class Form1
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(9, 61)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(168, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "gridcoinresearch.conf file location:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "gridcoinresearch.conf file location:"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)
         '
         'TextBox1
         '
@@ -75,30 +75,20 @@ Partial Class Form1
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Browse"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.GridcoinRemoteConfigurationTool.My.Resources.Resources.gridcoin
-        Me.PictureBox1.Location = New System.Drawing.Point(297, 51)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(290, 319)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
-        '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(9, 111)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(246, 26)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Enter IP Addresses to allow accessing your Wallet:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(One IP per line)"
+        Me.Label3.Text = "Enter IP Addresses to allow accessing your Wallet:"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"(One IP per line)"
         '
         'RichTextBox1
         '
@@ -110,7 +100,7 @@ Partial Class Form1
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(9, 210)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(200, 13)
@@ -119,7 +109,7 @@ Partial Class Form1
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Location = New System.Drawing.Point(9, 260)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(86, 13)
@@ -143,7 +133,7 @@ Partial Class Form1
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
+        Me.Label6.AutoSize = true
         Me.Label6.Location = New System.Drawing.Point(9, 311)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(84, 13)
@@ -157,26 +147,26 @@ Partial Class Form1
         Me.Button2.Size = New System.Drawing.Size(279, 23)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Save Configuration"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = true
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
+        Me.Label7.AutoSize = true
         Me.Label7.Location = New System.Drawing.Point(295, 386)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(292, 13)
         Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Gridcoin Remote Configuration Tool v1.0 by Moises Cardona"
+        Me.Label7.Text = "Gridcoin Remote Configuration Tool v1.1 by Moises Cardona"
         '
         'CheckBox1
         '
-        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.AutoSize = true
         Me.CheckBox1.Location = New System.Drawing.Point(12, 353)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(278, 17)
         Me.CheckBox1.TabIndex = 16
         Me.CheckBox1.Text = "Enable Wallet RPC Server (Required for App to work)"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CheckBox1.UseVisualStyleBackColor = true
         '
         'PortText
         '
@@ -185,9 +175,19 @@ Partial Class Form1
         Me.PortText.Size = New System.Drawing.Size(81, 20)
         Me.PortText.TabIndex = 17
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.GridcoinRemoteConfigurationTool.My.Resources.Resources.gridcoin
+        Me.PictureBox1.Location = New System.Drawing.Point(297, 51)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(290, 319)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabStop = false
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(599, 405)
         Me.Controls.Add(Me.PortText)
@@ -206,14 +206,14 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Gridcoin Remote Configuration Tool"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label

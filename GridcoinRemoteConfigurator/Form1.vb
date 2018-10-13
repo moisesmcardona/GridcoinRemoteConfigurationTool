@@ -91,8 +91,6 @@ Public Class Form1
                             If String.IsNullOrEmpty(RichTextBox1.Lines(i)) = False Then If RichTextBox1.Lines(i).Contains(" ") = False Then writer.WriteLine("rpcallowip=" & RichTextBox1.Lines(i))
                         Next
                         wroteIPAddresses = True
-                    ElseIf line.Contains("rpcallowip") And wroteIPAddresses = True Then
-
                     ElseIf line.Contains("rpcport") Then
                         RPCPortFound = True
                         writer.WriteLine("rpcport=" & PortText.Text)
