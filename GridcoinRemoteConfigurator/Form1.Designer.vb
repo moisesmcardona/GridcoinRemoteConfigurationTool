@@ -66,14 +66,14 @@ Partial Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(12, 77)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox1.TabIndex = 1
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(216, 74)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 3
+        Me.Button1.TabIndex = 2
         Me.Button1.Text = "Browse"
         Me.Button1.UseVisualStyleBackColor = true
         '
@@ -95,7 +95,7 @@ Partial Class Form1
         Me.RichTextBox1.Location = New System.Drawing.Point(12, 140)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(278, 57)
-        Me.RichTextBox1.TabIndex = 6
+        Me.RichTextBox1.TabIndex = 3
         Me.RichTextBox1.Text = ""
         '
         'Label4
@@ -121,15 +121,15 @@ Partial Class Form1
         Me.UsernameField.Location = New System.Drawing.Point(12, 276)
         Me.UsernameField.Name = "UsernameField"
         Me.UsernameField.Size = New System.Drawing.Size(278, 20)
-        Me.UsernameField.TabIndex = 10
+        Me.UsernameField.TabIndex = 5
         '
         'PasswordField
         '
         Me.PasswordField.Location = New System.Drawing.Point(12, 327)
         Me.PasswordField.Name = "PasswordField"
-        Me.PasswordField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PasswordField.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.PasswordField.Size = New System.Drawing.Size(278, 20)
-        Me.PasswordField.TabIndex = 11
+        Me.PasswordField.TabIndex = 6
         '
         'Label6
         '
@@ -145,7 +145,7 @@ Partial Class Form1
         Me.Button2.Location = New System.Drawing.Point(12, 376)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(279, 23)
-        Me.Button2.TabIndex = 13
+        Me.Button2.TabIndex = 8
         Me.Button2.Text = "Save Configuration"
         Me.Button2.UseVisualStyleBackColor = true
         '
@@ -164,7 +164,7 @@ Partial Class Form1
         Me.CheckBox1.Location = New System.Drawing.Point(12, 353)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(278, 17)
-        Me.CheckBox1.TabIndex = 16
+        Me.CheckBox1.TabIndex = 7
         Me.CheckBox1.Text = "Enable Wallet RPC Server (Required for App to work)"
         Me.CheckBox1.UseVisualStyleBackColor = true
         '
@@ -173,7 +173,7 @@ Partial Class Form1
         Me.PortText.Location = New System.Drawing.Point(12, 226)
         Me.PortText.Name = "PortText"
         Me.PortText.Size = New System.Drawing.Size(81, 20)
-        Me.PortText.TabIndex = 17
+        Me.PortText.TabIndex = 4
         '
         'PictureBox1
         '

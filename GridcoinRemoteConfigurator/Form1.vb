@@ -85,12 +85,14 @@ Public Class Form1
                     If line.Contains("server=") Then
                         ServerLineFound = True
                         writer.WriteLine("server=" & ServerEnabled)
-                    ElseIf line.Contains("rpcallowip") And wroteIPAddresses = False Then
-                        RPCIPFound = True
-                        For i As Integer = 0 To RichTextBox1.Lines.Length - 1
-                            If String.IsNullOrEmpty(RichTextBox1.Lines(i)) = False Then If RichTextBox1.Lines(i).Contains(" ") = False Then writer.WriteLine("rpcallowip=" & RichTextBox1.Lines(i))
-                        Next
-                        wroteIPAddresses = True
+                    ElseIf line.Contains("rpcallowip") Then
+                        If wroteIPAddresses = False Then
+                            RPCIPFound = True
+                            For i As Integer = 0 To RichTextBox1.Lines.Length - 1
+                                If String.IsNullOrEmpty(RichTextBox1.Lines(i)) = False Then If RichTextBox1.Lines(i).Contains(" ") = False Then writer.WriteLine("rpcallowip=" & RichTextBox1.Lines(i))
+                            Next
+                            wroteIPAddresses = True
+                        End If
                     ElseIf line.Contains("rpcport") Then
                         RPCPortFound = True
                         writer.WriteLine("rpcport=" & PortText.Text)
