@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("This is a tool that will modify your Gridcoin Research Configuration File in order to enable Remote RPC access")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("Gridcoin Remote Configuration Tool")>
-<Assembly: AssemblyCopyright("Copyright Moises Cardona ©  2016")>
+<Assembly: AssemblyCopyright("Copyright Moises Cardona ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.1.0.0")>
+<Assembly: AssemblyFileVersion("1.1.0.0")>
